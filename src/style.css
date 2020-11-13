@@ -89,6 +89,8 @@ body {
 }
 #header-banner .row #header-banner__right #banner__right-carousel .carousel-indicators {
   bottom: -80px;
+  margin-left: 0;
+  margin-right: 0;
 }
 #header-banner .row #header-banner__right #banner__right-carousel .carousel-indicators li {
   text-indent: 0;
