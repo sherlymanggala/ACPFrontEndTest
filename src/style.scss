@@ -23,7 +23,8 @@ $yellow: #ECDC47;
 html,
 body {
     font-family: $font;
-    font-smoothing: antialiased;
+    -webkit-font-smooth: antialiased;
+    -moz-osx-font-smoothing: grayscale;
     height: 100%;
     font-size: 100%;
 }

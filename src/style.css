@@ -6,7 +6,8 @@
 html,
 body {
   font-family: "Montserrat", sans-serif;
-  font-smoothing: antialiased;
+  -webkit-font-smooth: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   height: 100%;
   font-size: 100%;
 }
