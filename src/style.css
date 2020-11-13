@@ -91,15 +91,13 @@ body {
   padding-right: 20%;
 }
 #header-banner .row #header-banner__right #banner__right-carousel .carousel-control-next-icon {
-  height: 100px;
-  width: 100px;
   background-size: 100%, 100%;
   border-radius: 50%;
   background-image: none;
 }
 #header-banner .row #header-banner__right #banner__right-carousel .carousel-control-next-icon:after {
   content: ">";
-  font-size: 55px;
+  font-size: 3.5rem;
   color: #000000;
 }
 

@@ -121,9 +121,8 @@ body {
                 .carousel-item {
                     padding-right: 20%;
                 }
+                
                 .carousel-control-next-icon {
-                    height: 100px;
-                    width: 100px;
                     background-size: 100%, 100%;
                     border-radius: 50%;
                     background-image: none;
@@ -131,7 +130,7 @@ body {
 
                 .carousel-control-next-icon:after {
                     content: '>';
-                    font-size: 55px;
+                    font-size: 3.5rem;
                     color: $black;
                 }
             }
