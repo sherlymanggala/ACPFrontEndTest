@@ -33,7 +33,9 @@ body {
 }
 
 // Navbar
-.navbar {
+.navbar {    
+    background-color: $white !important;
+    
     .navbar-brand {
         @include font-extrabold();
     }
