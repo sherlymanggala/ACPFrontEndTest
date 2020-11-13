@@ -51,6 +51,7 @@ body {
 }
 #header-banner .row {
   padding-top: 132px;
+  padding-bottom: 132px;
 }
 #header-banner .row #header-banner__left h1 {
   font-size: 4.6875rem;
