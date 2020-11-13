@@ -101,10 +101,6 @@ body {
   transition: all 0.25s ease;
   color: #000000;
 }
-#header-banner .row #header-banner__right #banner__right-carousel .carousel-indicators li.active, #header-banner .row #header-banner__right #banner__right-carousel .carousel-indicators li:hover {
-  width: 40px;
-  height: 40px;
-}
 #header-banner .row #header-banner__right #banner__right-carousel .carousel-indicators li:nth-child(1) {
   background-color: #FF0073;
 }
@@ -114,8 +110,21 @@ body {
 #header-banner .row #header-banner__right #banner__right-carousel .carousel-indicators li:nth-child(3) {
   background-color: #ECDC47;
 }
+#header-banner .row #header-banner__right #banner__right-carousel .carousel-indicators li.active, #header-banner .row #header-banner__right #banner__right-carousel .carousel-indicators li:hover {
+  width: 40px;
+  height: 40px;
+}
 #header-banner .row #header-banner__right #banner__right-carousel .carousel-indicators li .caption {
-  padding-top: 50px;
+  margin-top: 60px;
+  margin-left: -60px;
+  width: 400%;
+}
+#header-banner .row #header-banner__right #banner__right-carousel .carousel-indicators li .caption img {
+  background-color: transparent;
+  border: 0;
+}
+#header-banner .row #header-banner__right #banner__right-carousel .carousel-indicators li .caption .caption-content {
+  display: none;
 }
 #header-banner .row #header-banner__right #banner__right-carousel .carousel-item {
   padding-right: 20%;
