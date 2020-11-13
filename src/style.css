@@ -13,6 +13,8 @@ body {
 
 .navbar {
   background-color: #FFFFFF !important;
+  padding-left: 142px;
+  padding-right: 142px;
 }
 .navbar .navbar-brand {
   font-weight: 800;

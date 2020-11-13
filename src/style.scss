@@ -35,6 +35,8 @@ body {
 // Navbar
 .navbar {    
     background-color: $white !important;
+    padding-left: 142px;
+    padding-right: 142px;
     
     .navbar-brand {
         @include font-extrabold();
