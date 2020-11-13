@@ -49,6 +49,7 @@ body {
   padding-right: 8.875rem;
   background: transparent linear-gradient(270deg, #FCE7F6 0%, #E3EAF8 100%) 0% 0% no-repeat padding-box;
   border-radius: 50px 50px 0px 0px;
+  height: fit-content;
 }
 #header-banner .bg-circle-containner .bg-circle {
   content: "";
@@ -58,10 +59,40 @@ body {
   z-index: 1;
 }
 #header-banner .bg-circle-containner .bg-circle.c-one {
+  width: 275px;
+  height: 275px;
+  top: 220px;
+  left: -80px;
+}
+#header-banner .bg-circle-containner .bg-circle.c-two {
   width: 200px;
   height: 200px;
-  top: 200px;
-  left: -30px;
+  top: 170px;
+  right: 450px;
+}
+#header-banner .bg-circle-containner .bg-circle.c-three {
+  width: 96px;
+  height: 96px;
+  top: 150px;
+  right: 420px;
+}
+#header-banner .bg-circle-containner .bg-circle.c-four {
+  width: 75px;
+  height: 75px;
+  top: 700px;
+  left: 100px;
+}
+#header-banner .bg-circle-containner .bg-circle.c-five {
+  width: 139px;
+  height: 139px;
+  top: 550px;
+  left: 35%;
+}
+#header-banner .bg-circle-containner .bg-circle.c-six {
+  width: 139px;
+  height: 139px;
+  bottom: -250px;
+  right: -50px;
 }
 #header-banner .row {
   padding-top: 5rem;

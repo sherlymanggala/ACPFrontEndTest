@@ -74,6 +74,7 @@ body {
     padding-right: 8.875rem;
     background: transparent linear-gradient(270deg, $pink-bg 0%, $blue-bg 100%) 0% 0% no-repeat padding-box;
     border-radius: 50px 50px 0px 0px;
+    height: fit-content;
 
     .bg-circle-containner {
         .bg-circle {
@@ -83,11 +84,51 @@ body {
             background: transparent radial-gradient(closest-side at 69% 64%, $pink-1 0%, $pink-2 0%, $pink-3 100%) 0% 0% no-repeat padding-box;
             z-index: 1;
 
+            // First biggest circle on the top left side
             &.c-one {
+                width: 275px;
+                height: 275px;
+                top: 220px;
+                left: -80px;
+            }
+
+            // Big circle near shoes
+            &.c-two {
                 width: 200px;
                 height: 200px;
-                top: 200px;
-                left: -30px;
+                top: 170px;
+                right: 450px;
+            }
+
+            // Smaller circle near shoes on top of big circle
+            &.c-three {
+                width: 96px;
+                height: 96px;
+                top: 150px;
+                right: 420px;
+            }
+
+            // Smallest circle on left bottom of banner
+            &.c-four {
+                width: 75px;
+                height: 75px;
+                top: 700px;
+                left: 100px;
+            }
+
+            // Circle on middle bottom of banner
+            &.c-five {
+                width: 139px;
+                height: 139px;
+                top: 550px;
+                left: 35%;
+            }
+
+            &.c-six {
+                width: 139px;
+                height: 139px;
+                bottom: -250px;
+                right: -50px;
             }
         }
     }
