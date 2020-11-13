@@ -55,9 +55,16 @@ body {
 #header-banner .row #header-banner__left h1 {
   font-size: 4.6875rem;
   letter-spacing: 0px;
+  color: #000000;
 }
 #header-banner .row #header-banner__left h1 strong {
   font-size: 5.625rem;
+}
+#header-banner .row #header-banner__left p {
+  font-size: 1.25rem;
+  color: #000000;
+  margin: 50px auto 80px;
+  line-height: 50px;
 }
 #header-banner .row #header-banner__right {
   margin-left: 25%;
