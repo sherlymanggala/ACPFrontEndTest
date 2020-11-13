@@ -256,5 +256,35 @@ body {
     font-size: 75% !important;
   }
 }
+@media (max-width: 768px) {
+  html, body {
+    font-size: 70% !important;
+  }
+
+  .navbar {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .navbar .nav-item {
+    margin-left: 0 !important;
+    padding: 20px 0 !important;
+  }
+
+  #header-banner #header-banner__right {
+    margin-left: 0 !important;
+    margin-top: 100px;
+  }
+}
+@media (max-width: 425px) {
+  html, body {
+    font-size: 60% !important;
+  }
+
+  .navbar,
+#header-banner {
+    padding-left: 50px !important;
+    padding-right: 50px !important;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
