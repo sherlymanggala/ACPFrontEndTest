@@ -46,6 +46,11 @@ body {
 #header-banner {
   padding-left: 142px;
   padding-right: 142px;
+  background: transparent linear-gradient(270deg, #FCE7F6 0%, #E3EAF8 100%) 0% 0% no-repeat padding-box;
+  border-radius: 50px 50px 0px 0px;
+}
+#header-banner .row {
+  padding-top: 132px;
 }
 
 /*# sourceMappingURL=style.css.map */

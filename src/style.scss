@@ -73,4 +73,10 @@ body {
 #header-banner {
     padding-left: 142px;
     padding-right: 142px;
+    background: transparent linear-gradient(270deg, $pink-bg 0%, $blue-bg 100%) 0% 0% no-repeat padding-box;
+    border-radius: 50px 50px 0px 0px;
+
+    .row {
+        padding-top: 132px;
+    }
 }
