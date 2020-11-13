@@ -22,7 +22,6 @@ body {
   padding-right: 142px;
 }
 .navbar .navbar-brand {
-  font-weight: 800;
   font-size: 2.1875rem;
   color: #000000;
 }
@@ -51,6 +50,29 @@ body {
 }
 #header-banner .row {
   padding-top: 132px;
+}
+#header-banner .row #header-banner__right {
+  margin-left: 25%;
+}
+
+.font-light {
+  font-weight: 300;
+}
+
+.font-regular {
+  font-weight: 400;
+}
+
+.font-semibold {
+  font-weight: 600;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.font-extrabold {
+  font-weight: 800;
 }
 
 /*# sourceMappingURL=style.css.map */
