@@ -39,4 +39,25 @@ body {
     .navbar-brand {
         @include font-extrabold();
     }
+
+    #navbar-links {
+        .nav-item {
+            text-transform: uppercase;
+            color: $dark-gray;
+            margin-left: 2.5em;
+            letter-spacing: 0;
+            font-size: 1.25rem;
+
+            &:nth-child(1) {
+                margin-left: 0;
+            }
+
+            &.active {
+                border-bottom: 5px solid $red;
+                .nav-link {
+                    color: $red;
+                }
+            }
+        }
+    }
 }
