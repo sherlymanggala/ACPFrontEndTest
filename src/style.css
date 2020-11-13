@@ -87,6 +87,9 @@ body {
 #header-banner .row #header-banner__right {
   margin-left: 12.5%;
 }
+#header-banner .row #header-banner__right #banner__right-carousel .carousel-indicators {
+  bottom: -50px;
+}
 #header-banner .row #header-banner__right #banner__right-carousel .carousel-item {
   padding-right: 20%;
 }
