@@ -273,6 +273,10 @@ body {
 
                 .carousel-item {
                     padding-right: 20%;
+
+                    img {
+                        filter: drop-shadow(0 10px 5px #4444dd);
+                    }
                 }
 
                 .carousel-control-next-icon {

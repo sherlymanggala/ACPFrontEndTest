@@ -216,6 +216,9 @@ body {
 #header-banner .row #header-banner__right #banner__right-carousel .carousel-item {
   padding-right: 20%;
 }
+#header-banner .row #header-banner__right #banner__right-carousel .carousel-item img {
+  filter: drop-shadow(0 10px 5px #4444dd);
+}
 #header-banner .row #header-banner__right #banner__right-carousel .carousel-control-next-icon {
   background-size: 100%, 100%;
   border-radius: 50%;
