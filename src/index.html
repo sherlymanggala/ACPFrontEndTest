@@ -51,7 +51,11 @@
 
       <!-- Body starts here -->
       <div class="container-fluid" id="header-banner">
+
+        <!-- Wrapper that contains all content and circles -->
         <div class="wrapper" id="header-banner-container">
+
+          <!-- Container for circle background only -->
           <div class="bg-circle-containner">
             <div class="bg-circle c-one"></div>
             <div class="bg-circle c-two"></div>
@@ -60,8 +64,12 @@
             <div class="bg-circle c-five"></div>
             <div class="bg-circle c-six"></div>
           </div>
+
+          <!-- Container for content over the background -->
           <div class="row">
             <!-- Banner Left Side -->
+            <!-- This side includes title, subtitle, and button -->
+            <!-- This side takes 5 columns from 12 columns grid and will breakdown when screen size is smaller than desktop size (992px below) -->
             <div class="col-lg-5" id="header-banner__left">
               <h1>Are you ready to<br/><strong>lead the way</strong></h1>
               <p>Mauris porta lectus nulla, non dignissim dolor sollicitudin et. Sed mi tortor, aliquam eget congue a, faucibus sed est.</p>
@@ -69,15 +77,17 @@
             </div>
 
             <!-- Banner Right Side -->
+            <!-- This side includes shoes and indicators -->
+            <!-- This side takes the rest of the grid, will breakdown when screen size is below than desktop (992px below)-->
             <div class="col-lg" id="header-banner__right">
               <!-- Carousel for Shoes -->
               <div id="banner__right-carousel" class="carousel slide" data-ride="carousel">
                 <!-- Carousel indicators that will open the slide according to the order/slide number -->
                 <ol class="carousel-indicators d-flex">
 
-                  <!-- To be Fixed -->
+                  <!-- List of indicators that contain a small picture thumbnail of the shoe, a colored bullet point, and the shoe title and price -->
                   <li data-target="#banner__right-carousel" data-slide-to="0" class="active">
-                    <span class="circle red"></span>
+                    <span class="circle red"></span> <!-- this is the red bullet indicators -->
                     <div class="caption">
                       <img src="../assets/3414.png" class="img-thumbnail" alt="">
                       <div class="caption-content">
@@ -88,7 +98,7 @@
                     </div>
                   </li>
                   <li data-target="#banner__right-carousel" data-slide-to="1">
-                    <span class="circle blue"></span>
+                    <span class="circle blue"></span> <!-- this is the blue bullet indicators -->
                     <div class="caption">
                       <img src="../assets/Blue.png" class="img-thumbnail" alt="">
                       <div class="caption-content">
@@ -99,7 +109,7 @@
                     </div>
                   </li>
                   <li data-target="#banner__right-carousel" data-slide-to="2">
-                    <span class="circle yellow"></span>
+                    <span class="circle yellow"></span> <!-- this is the yellow bullet indicators -->
                     <div class="caption">
                       <img src="../assets/Yellow.png" class="img-thumbnail" alt="">
                       <div class="caption-content">
@@ -113,19 +123,20 @@
 
                 <!-- Carousel Content -->
                 <div class="carousel-inner">
-                  <div class="carousel-item active">
+                  <div class="carousel-item active"> <!-- First slide of carousel -->
                     <img class="d-block w-100 img-fluid" src="../assets/3414@2x.png" alt="Pink Shoes">
                   </div>
-                  <div class="carousel-item">
+                  <div class="carousel-item"> <!-- Second slide of carousel -->
                     <img class="d-block w-100 img-fluid" src="../assets/Blue@2x.png" alt="Blue Shoes">
                   </div>
-                  <div class="carousel-item">
+                  <div class="carousel-item"> <!-- Third slide of carousel -->
                     <img class="d-block w-100 img-fluid" src="../assets/Yellow@2x.png" alt="Yellow Shoes">
                   </div>
                 </div>
 
-                <!-- Arrow controller to switch carousel content to the left or right -->
+                <!-- Arrow controller to switch carousel content to the right only -->
                 <a class="carousel-control-next" href="#banner__right-carousel" role="button" data-slide="next">
+                  <!-- These spans are all hidden and will appears only on screenreader mode -->
                   <span class="carousel-control-next-icon" aria-hidden="true"></span>
                   <span class="sr-only">Next</span>
                 </a>
