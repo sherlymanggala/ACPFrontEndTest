@@ -118,6 +118,7 @@ body {
   margin-top: 60px;
   margin-left: -60px;
   width: 400%;
+  display: flex;
 }
 #header-banner .row #header-banner__right #banner__right-carousel .carousel-indicators li .caption img {
   background-color: transparent;
@@ -125,6 +126,9 @@ body {
 }
 #header-banner .row #header-banner__right #banner__right-carousel .carousel-indicators li .caption .caption-content {
   display: none;
+}
+#header-banner .row #header-banner__right #banner__right-carousel .carousel-indicators li.active .caption .caption-content {
+  display: block;
 }
 #header-banner .row #header-banner__right #banner__right-carousel .carousel-item {
   padding-right: 20%;

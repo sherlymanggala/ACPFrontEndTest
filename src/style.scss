@@ -147,12 +147,13 @@ body {
                         &.active, &:hover {
                             width: 40px;
                             height: 40px;   
-                          }
+                        }
 
                         .caption {
                             margin-top: 60px;
                             margin-left: -60px;
                             width: 400%;
+                            display: flex;
 
                             img {
                                 background-color: transparent;
@@ -163,7 +164,15 @@ body {
                                 display: none;
                             }
                         }
-                      }
+
+                        &.active {
+                            .caption {
+                                .caption-content {
+                                    display: block;
+                                }
+                            }
+                        }
+                    }
                 }
 
                 .carousel-item {
