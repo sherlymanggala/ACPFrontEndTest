@@ -186,6 +186,9 @@ body {
   width: 2rem;
   height: 2rem;
 }
+#header-banner .row #header-banner__right #banner__right-carousel .carousel-indicators li.active .caption {
+  margin-right: 4rem;
+}
 #header-banner .row #header-banner__right #banner__right-carousel .carousel-indicators li.active .caption img {
   z-index: 3;
   width: 100px;
