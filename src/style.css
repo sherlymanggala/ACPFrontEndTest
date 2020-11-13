@@ -76,6 +76,9 @@ body {
   background-color: #FFFFFF;
   color: #FF0073;
 }
+#header-banner .row #header-banner__left button span {
+  margin-left: 30px;
+}
 #header-banner .row #header-banner__right {
   margin-left: 25%;
 }

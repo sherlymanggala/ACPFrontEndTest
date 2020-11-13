@@ -103,6 +103,10 @@ body {
                 text-transform: uppercase;
                 background-color: $white;
                 color: $red;
+
+                span {
+                    margin-left: 30px;
+                }
             }
         }
 
