@@ -50,11 +50,25 @@ body {
   background: transparent linear-gradient(270deg, #FCE7F6 0%, #E3EAF8 100%) 0% 0% no-repeat padding-box;
   border-radius: 50px 50px 0px 0px;
 }
+#header-banner .bg-circle-containner .bg-circle {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  background: transparent radial-gradient(closest-side at 69% 64%, #FECBE2 0%, #FED0E5 0%, #FFF6FB 100%) 0% 0% no-repeat padding-box;
+  z-index: 1;
+}
+#header-banner .bg-circle-containner .bg-circle.c-one {
+  width: 200px;
+  height: 200px;
+  top: 200px;
+  left: -30px;
+}
 #header-banner .row {
   padding-top: 5rem;
   padding-bottom: 17.5rem;
 }
 #header-banner .row #header-banner__left {
+  z-index: 2;
   margin-top: 6.25rem;
 }
 #header-banner .row #header-banner__left h1 {
@@ -85,6 +99,7 @@ body {
   margin-left: 30px;
 }
 #header-banner .row #header-banner__right {
+  z-index: 2;
   margin-left: 12.5%;
 }
 #header-banner .row #header-banner__right #banner__right-carousel .carousel-indicators {
@@ -137,7 +152,7 @@ body {
   height: 2rem;
 }
 #header-banner .row #header-banner__right #banner__right-carousel .carousel-indicators li.active .caption img {
-  z-index: 2;
+  z-index: 3;
   width: 100px;
   height: auto;
 }

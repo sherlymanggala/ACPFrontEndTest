@@ -75,11 +75,29 @@ body {
     background: transparent linear-gradient(270deg, $pink-bg 0%, $blue-bg 100%) 0% 0% no-repeat padding-box;
     border-radius: 50px 50px 0px 0px;
 
+    .bg-circle-containner {
+        .bg-circle {
+            content: "";
+            position: absolute;
+            border-radius: 50%;
+            background: transparent radial-gradient(closest-side at 69% 64%, $pink-1 0%, $pink-2 0%, $pink-3 100%) 0% 0% no-repeat padding-box;
+            z-index: 1;
+
+            &.c-one {
+                width: 200px;
+                height: 200px;
+                top: 200px;
+                left: -30px;
+            }
+        }
+    }
+
     .row {
         padding-top: 5rem;
         padding-bottom: 17.5rem;
 
         #header-banner__left {
+            z-index: 2;
             margin-top: 6.25rem;
             h1 {
                 font-size: 4.125rem;
@@ -115,6 +133,7 @@ body {
         }
 
         #header-banner__right {
+            z-index: 2;
             margin-left: 12.5%;
 
             #banner__right-carousel {
@@ -177,7 +196,7 @@ body {
                             }
                             .caption {
                                 img {
-                                    z-index: 2;
+                                    z-index: 3;
                                     width: 100px;
                                     height: auto;
                                 }                             
