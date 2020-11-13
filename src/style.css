@@ -115,8 +115,9 @@ body {
 }
 #header-banner .row #header-banner__right #banner__right-carousel .carousel-indicators li .caption {
   margin-top: 60px;
-  margin-left: -60px;
-  width: 400%;
+  margin-left: -40px;
+  width: 300%;
+  height: auto;
   display: flex;
 }
 #header-banner .row #header-banner__right #banner__right-carousel .carousel-indicators li .caption img {
@@ -126,8 +127,31 @@ body {
 #header-banner .row #header-banner__right #banner__right-carousel .carousel-indicators li .caption .caption-content {
   display: none;
 }
+#header-banner .row #header-banner__right #banner__right-carousel .carousel-indicators li.active .caption {
+  width: 360%;
+  height: auto;
+}
+#header-banner .row #header-banner__right #banner__right-carousel .carousel-indicators li.active .caption img {
+  z-index: 2;
+}
 #header-banner .row #header-banner__right #banner__right-carousel .carousel-indicators li.active .caption .caption-content {
+  position: relative;
   display: block;
+  font-size: 1.25rem;
+  background-color: #FFFFFF;
+  border-radius: 25px;
+  margin-left: -70px;
+  margin-top: 20px;
+  padding: 20px 80px 50px 100px;
+  height: 100px;
+  z-index: 1;
+}
+#header-banner .row #header-banner__right #banner__right-carousel .carousel-indicators li.active .caption .caption-content .caption-content-plus {
+  position: absolute;
+  float: right;
+  bottom: 20px;
+  right: 15px;
+  font-size: 2rem;
 }
 #header-banner .row #header-banner__right #banner__right-carousel .carousel-item {
   padding-right: 20%;

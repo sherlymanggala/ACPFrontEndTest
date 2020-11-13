@@ -150,8 +150,9 @@ body {
 
                         .caption {
                             margin-top: 60px;
-                            margin-left: -60px;
-                            width: 400%;
+                            margin-left: -40px;
+                            width: 300%;
+                            height: auto;
                             display: flex;
 
                             img {
@@ -166,8 +167,31 @@ body {
 
                         &.active {
                             .caption {
+                                width: 360%;
+                                height: auto;
+                                
+                                img {
+                                    z-index: 2;
+                                }                             
                                 .caption-content {
+                                    position: relative;
                                     display: block;
+                                    font-size: 1.25rem;
+                                    background-color: $white;
+                                    border-radius: 25px;
+                                    margin-left: -70px;
+                                    margin-top: 20px;
+                                    padding: 20px 80px 50px 100px;
+                                    height: 100px;
+                                    z-index: 1;
+
+                                    .caption-content-plus {
+                                        position: absolute;
+                                        float: right;
+                                        bottom: 20px;
+                                        right: 15px;
+                                        font-size: 2rem;
+                                    }
                                 }
                             }
                         }
