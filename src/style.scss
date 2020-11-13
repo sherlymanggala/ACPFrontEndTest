@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800&display=swap');
+
+$font: 'Montserrat', sans-serif;
+
+$white: #FFFFFF;
+$pink-bg: #FCE7F6;
+$blue-bg: #E3EAF8;
+$black: #000000;
+$red: #FF0073;
+$pink-1: #FECBE2;
+$pink-2: #FED0E5;
+$pink-3: #FFF6FB;
+$dark-gray: #707070;
+$maroon: #7E0D40;
+$blue: #57C7E4;
+$yellow: #ECDC47;
+
+html,
+body {
+    font-family: $font;
+    font-smoothing: antialiased;
+    height: 100%;
+    font-size: 100%;
+}
