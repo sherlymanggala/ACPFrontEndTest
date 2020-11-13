@@ -90,49 +90,49 @@ body {
 
             // First biggest circle on the top left side
             &.c-one {
-                width: 275px;
-                height: 275px;
-                top: 220px;
+                width: 17.17875rem;
+                height: 17.17875rem;
+                top: 20%;
                 left: -80px;
             }
 
             // Big circle near shoes
             &.c-two {
-                width: 200px;
-                height: 200px;
-                top: 170px;
-                right: 450px;
+                width: 12.5rem;
+                height: 12.5rem;
+                top: 17%;
+                right: 30%;
             }
 
             // Smaller circle near shoes on top of big circle
             &.c-three {
-                width: 96px;
-                height: 96px;
-                top: 150px;
-                right: 420px;
+                width: 5.625rem;
+                height: 5.625rem;
+                top: 15%;
+                right: 30%;
             }
 
             // Smallest circle on left bottom of banner
             &.c-four {
-                width: 75px;
-                height: 75px;
-                top: 700px;
-                left: 100px;
+                width: 4.6875rem;
+                height: 4.6875rem;
+                top: 60%;
+                left: 10%;
             }
 
             // Circle on middle bottom of banner
             &.c-five {
-                width: 139px;
-                height: 139px;
-                top: 550px;
+                width: 8.75rem;
+                height: 8.75rem;
+                top: 55%;
                 left: 35%;
             }
 
             &.c-six {
-                width: 139px;
-                height: 139px;
-                bottom: -250px;
-                right: -50px;
+                width: 8.75rem;
+                height: 8.75rem;
+                right: -40px;
+                top: 70%
             }
         }
     }
@@ -275,7 +275,7 @@ body {
                     padding-right: 20%;
 
                     img {
-                        filter: drop-shadow(0 10px 5px #4444dd);
+                        filter: drop-shadow(0 10px 5px $gray-shadow);
                     }
                 }
 
