@@ -76,7 +76,14 @@ body {
         padding-top: 132px;
 
         #header-banner__left {
-            
+            h1 {
+                font-size: 4.6875rem;
+                letter-spacing: 0px;
+
+                strong {
+                    font-size: 5.625rem;
+                }
+            }
         }
 
         #header-banner__right {

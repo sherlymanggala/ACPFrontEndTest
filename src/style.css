@@ -51,6 +51,13 @@ body {
 #header-banner .row {
   padding-top: 132px;
 }
+#header-banner .row #header-banner__left h1 {
+  font-size: 4.6875rem;
+  letter-spacing: 0px;
+}
+#header-banner .row #header-banner__left h1 strong {
+  font-size: 5.625rem;
+}
 #header-banner .row #header-banner__right {
   margin-left: 25%;
 }
