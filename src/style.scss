@@ -11,6 +11,7 @@ $pink-1: #FECBE2;
 $pink-2: #FED0E5;
 $pink-3: #FFF6FB;
 $dark-gray: #707070;
+$gray-shadow: #0000000D;
 $maroon: #7E0D40;
 $blue: #57C7E4;
 $yellow: #ECDC47;
@@ -103,6 +104,7 @@ body {
                 text-transform: uppercase;
                 background-color: $white;
                 color: $red;
+                box-shadow: 7px 12px 20px $gray-shadow;
 
                 span {
                     margin-left: 30px;
