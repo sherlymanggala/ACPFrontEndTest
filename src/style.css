@@ -13,6 +13,7 @@ body {
   -webkit-font-smooth: antialiased;
   -moz-osx-font-smoothing: grayscale;
   height: 100%;
+  width: 100%;
   font-size: 100%;
 }
 

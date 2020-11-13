@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800&display=swap');
 
+// Define all fonts to Montserrat
 $font: 'Montserrat', sans-serif;
 
+// All color variables for font color and background color
 $white: #FFFFFF;
 $pink-bg: #FCE7F6;
 $blue-bg: #E3EAF8;
@@ -16,34 +18,40 @@ $maroon: #7E0D40;
 $blue: #57C7E4;
 $yellow: #ECDC47;
 
+// set the root font size to 16px (default size is also 16px)
 :root {
     font-size: 16px;
 }
 
+// remove extra white space on the right side of the web
 html {
     overflow-x: hidden;
 }
 
+// initialized html and body fonts, height, and width to be fit to the screen media
 html,
 body {
     font-family: $font;
     -webkit-font-smooth: antialiased;
     -moz-osx-font-smoothing: grayscale;
     height: 100%;
+    width: 100%;
     font-size: 100%;
 }
 
+// reset container-fluid's padding from bootstrap
 #body.container-fluid {
     padding-left: 0;
     padding-right: 0;
 }
 
-// Navbar
+// Navbar section starts here
 .navbar {    
     background-color: $white !important;
     padding: 0 8.875rem;
     z-index: 10;
     
+    // This is for the "Shoe" text on logo beside shoe icon
     .navbar-brand {
         font-size: 2.1875rem;
         color: $black;
@@ -59,10 +67,12 @@ body {
             font-size: 1.25rem;
             padding: 3.125rem 0;
 
+            // Set the margin of the 2nd to the last links for spacing except first link
             &:nth-child(1) {
                 margin-left: 0;
             }
 
+            // Change the link's color and decoration to have an underline effect when active
             &.active {
                 border-bottom: 5px solid $red;
                 .nav-link {
@@ -73,22 +83,32 @@ body {
     }
 }
 
-// Header Banner
+// Header Banner section starts here
 #header-banner {
+    // Set the padding the same as navbar
     padding-left: 8.875rem;
     padding-right: 8.875rem;
+
+    // Make the background's color to be a gradient from blueish to pinkish
     background: transparent linear-gradient(270deg, $pink-bg 0%, $blue-bg 100%) 0% 0% no-repeat padding-box;
+
+    // Set the box corner to be rounded
     border-radius: 50px 50px 0px 0px;
+    
+    // Set the height to be fitted to its content
     height: fit-content;
 
+    // All circles that are scattered across the background of the banner
     .bg-circle-containner {
-        .bg-circle {
+        .bg-circle { 
+            // Set all circle to have the same shape and color
             content: "";
             position: absolute;
             border-radius: 50%;
             background: transparent radial-gradient(closest-side at 69% 64%, $pink-1 0%, $pink-2 0%, $pink-3 100%) 0% 0% no-repeat padding-box;
             z-index: 1;
 
+            // Set each circle by each sizes and positions
             // First biggest circle on the top left side
             &.c-one {
                 width: 17.17875rem;
@@ -129,6 +149,7 @@ body {
                 left: 35%;
             }
 
+            // Circle on the bottom right corner
             &.c-six {
                 width: 8.75rem;
                 height: 8.75rem;
@@ -138,10 +159,12 @@ body {
         }
     }
 
+    // Set the padding for the outer container of the content
     .row {
         padding-top: 5rem;
         padding-bottom: 17.5rem;
 
+        // styling the size, fonts, and buttons
         #header-banner__left {
             z-index: 2;
             margin-top: 6.25rem;
@@ -178,16 +201,19 @@ body {
             }
         }
 
+        // Styling the shoes or the carousel
         #header-banner__right {
             z-index: 2;
-            margin-left: 12.5%;
+            margin-left: 12.5%; // give an extra spacing from the left side
 
             #banner__right-carousel {
                 .carousel-indicators {
-                    bottom: -50px;
+                    bottom: -50px; // set all indicators lower than the default position
                     margin-left: 0;
                     margin-right: 0;
 
+                    // This li contains the circle, thumbnail, and captions (shoe's title and prices)
+                    // The li's width is to be fitted as the content's width so it will not overlapping each indicator and content
                     li {
                         text-indent: 0;
                         width: fit-content;
@@ -196,6 +222,7 @@ body {
                         color: $black;
                         background-color: transparent;
 
+                        // This is the bullet indicator above the shoe thumbnail
                         .circle {
                             content: "";
                             position: absolute;
@@ -204,6 +231,7 @@ body {
                             border-radius: 50px;
                             border: 3px solid $white;
 
+                            // Set all bullets' color to the shoe's color respectively
                             &.red {
                                 background-color: $red;
                             }
@@ -217,11 +245,12 @@ body {
                             }
                         }
 
+                        // This is the container of the thumbnail and the content
                         .caption {
                             margin-top: 3.5rem;
                             margin-left: -40px;
                             height: auto;
-                            display: flex;
+                            display: flex; // set the content to be each other of each children
 
                             img {
                                 background-color: transparent;
@@ -231,22 +260,30 @@ body {
                             }
 
                             .caption-content {
-                                display: none;
+                                display: none; // hidden the shoe's title and price when it is not active
                             }
                         }
 
+                        // changes the appearance of the indicator when active
                         &.active {
+
+                            // set the bullet indicator bigger when active
                             .circle {
                                 width: 2rem;
                                 height: 2rem;
                             }
+
+                            // add another spacing to the right side of each indicator
                             .caption {
                                 margin-right: 4rem;
+
                                 img {
                                     z-index: 3;
                                     width: 100px;
                                     height: auto;
-                                }                             
+                                }     
+
+                                // make the shoe's title and price appear when active
                                 .caption-content {
                                     position: relative;
                                     display: block !important;
@@ -258,6 +295,7 @@ body {
                                     padding: .8125rem 4rem .8125rem 7rem;
                                     z-index: 1;
 
+                                    // position the + icon to the right side of the price
                                     .caption-content-plus {
                                         position: absolute;
                                         float: right;
@@ -272,20 +310,24 @@ body {
                     }
                 }
 
+                // add an extra padding so the arrow is not overlapping the picture
                 .carousel-item {
                     padding-right: 20%;
 
+                    // add a shoe's vertical shadow 
                     img {
                         filter: drop-shadow(0 10px 5px $gray-shadow);
                     }
                 }
 
+                // remove the default arrow because the arrow cannot be customized
                 .carousel-control-next-icon {
                     background-size: 100%, 100%;
                     border-radius: 50%;
                     background-image: none;
                 }
 
+                // add a new customized arrow
                 .carousel-control-next-icon:after {
                     content: '>';
                     font-size: 3.5rem;
@@ -316,27 +358,33 @@ body {
     font-weight: 800;
 }
 
+// when screen size is between 768px to 1440px, set all font-size to be 75% of the original size
+// this also applies on other sizes with different percentage
 @media (max-width: 1440px) {
     html, body {
         font-size: 75% !important;
     }
 }
 
+// tablet screen size
 @media (max-width: 768px) {
     html, body {
         font-size: 70% !important;
     }
 
+    // give an extra padding on top and bottom of the navbar
     .navbar {
         padding-top: 30px;
         padding-bottom: 30px;
 
+        // removes all links' margin and set new paddings for all links
         .nav-item {
             margin-left: 0 !important;
             padding: 20px 0 !important;
         }
     }
 
+    // remove extra spacing of the left side and give another margin between the shoe's section and title's section
     #header-banner {
         #header-banner__right {
             margin-left: 0 !important;
@@ -345,11 +393,13 @@ body {
     }
 }
 
+// mobile screen size
 @media (max-width: 425px) {
     html, body {
         font-size: 60% !important;
     }
 
+    // change navbar and banner padding to a smaller size
     .navbar,
     #header-banner {
         padding-left: 50px !important;
